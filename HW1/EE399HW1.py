@@ -1,5 +1,5 @@
 """
-Kyle Herbruger
+Kyle Herbruger (Visit my GitHub! https://github.com/Doktorwh0 )
 EE 399 HW01
 4/7/2023
 Best fit function calculator.
