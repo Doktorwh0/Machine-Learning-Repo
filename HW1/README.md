@@ -1,8 +1,15 @@
-# Kyle Herbruger
-## 4/10/2023
+## Author: Kyle Herbruger 
+### 4/10/2023
+## Machine Learning HW01
+### This program is a simple Machine Learning program that fits a curve to a given data set.
 
-### Machine Learning HW01
-### This program is a simple Machine Learning
+This program can iterate over a given data set to find the best curve fit to the data.   
+Presently, it only attempts to fit to a simple function that we already know will fit   
+with the data reasonably well (A\*sin(B\*X) + CX + D). It also will attempt to fit   
+to a 19th degree polynomial using the first 20 points as training data with the last   
+10 being test data, or using the first and last 10 points as training data with the middle   
+10 points being the test data. In all cases, it will output the Least Squares Error (LSE)   
+to the console.
 
 ![test1](f1.png)
 This program fits two functions to a few
