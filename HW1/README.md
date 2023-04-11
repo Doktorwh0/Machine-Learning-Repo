@@ -3,51 +3,57 @@
 ## Machine Learning HW01
 ### This program is a simple Machine Learning program that fits a curve to a given data set.
 
-This program can iterate over a given data set to find the best curve fit to the data.   
-Presently, it only attempts to fit to a simple function that we already know will fit   
-with the data reasonably well (A\*sin(B\*X) + CX + D). It also will attempt to fit   
-to a 19th degree polynomial using the first 20 points as training data with the last   
-10 being test data, or using the first and last 10 points as training data with the middle   
-10 points being the test data. In all cases, it will output the Least Squares Error (LSE)   
-to the console.
+This program can iterate over a given data set to find the best curve fit to the data. resently, it only attempts to fit to a simple function that we already know will fit with the data reasonably well (A\*sin(B\*X) + CX + D). It also will attempt to fit to a 19th degree polynomial using the first 20 points as training data with the last 10 being test data, or using the first and last 10 points as training data with the middle 10 points being the test data. In all cases, it will output the Least Squares Error (LSE) to the console. Additionally, it will produce a few plots showing the set equation fit curve on the given data, the resulting LSE of sweeping the A-D parameters ±25 as a color plot, as well as the 19th polynomial fit on the test data and training data. 
 
+
+## Best fit of the sin function to the data:
 ![test1](f1.png)
-This program fits two functions to a few
-different data sets, and I believe it is
-to teach us about how to fit data, as 
-well as about overfitting data. In part
-i, we started off with fitting a sin
-function to a given data set, and then
-calculated the least squares error to
-see how well it fit.
 
-In part ii we varied the parameters of
-the sin function we fit to the data,
-and calculated the LSE for each result.
-This showed how different parameters
-had different impacts on the LSE.
-The A and C variables had the greatest
-impact, while B and D, which still
-greatly impacted the LSE, were almost
-insignificant in comparison.
+# Background:
+This task is to teach us how to fit a curve to a data set to recognize the patterns and create a simple machine learning algorithim that can predict other potential points, or verify if other data points are following the pattern. This will be useful to understand for future Machine Learning projects as once we've grouped data, we will need to be able to identify which patterns they belong to, and thus which output they are. 
 
-In part iii we trained a 19th degree
-polynomial to fit the first 20 data 
-points, and then compared its LSE
-on the training data to that of the
-test data (the last 10 points).
-While the training data had a really
-good LSE, the test data LSE was worse 
-than my mental health.
+# Algorithim Implementation and Development:
+In this project, I used the least_squares function from scipy.optimize. This optimizes our given parameters (A, B, C, D) to reduce the error according to my objective_dif function which 
 
-In part iv we repeated part iii with
-the first and last 10 data points as
-training data, and the middle 10 as 
-the test data. This approach gave
-a much better LSE for the test data,
-however, it did negatively impact
-the LSE for the training data. 
+# Computational Results:
+##Here are my figures showing the results of varying the best fit parameters by 25:
 
-In either case, fitting with the wrong
-function can easily cause overfitting
-problems.
+
+## LSE from varying the C and D variables by ±25:
+<small>*\*The plot axes are offset by +25 to prevent a minor bug.*</small>
+
+![test1](f2.png)
+
+## LSE from varying the A and B variables by ±25:
+![test1](f3.png)
+
+## LSE from varying the A and C variables by ±25:
+![test1](f4.png)
+
+## LSE from varying the B and C variables by ±25:
+![test1](f5.png)
+
+## LSE from varying the A and D variables by ±25:
+![test1](f6.png)
+
+## LSE from varying the B and D variables by ±25:
+![test1](f7.png)
+
+
+## And my 19th polynomial fit showing the results of training data and test data:
+
+
+## 19th Degree Polynomial fit to training data (first 20 data points):
+![test1](f8.png)
+
+## 19th Degree Polynomial fit to test data (last 10 data points):
+![test1](f9.png)
+
+## 19th Degree Polynomial fit to training data (first and last 10 data points):
+![test1](f10.png)
+
+## 19th Degree Polynomial fit to test data (middle 20 data points):
+![test1](f11.png)
+
+# Summary and Conclusions:
+In summation, this exercise worked to show us the importance of understanding your data, and how easy it is to overfit a function to the training data. It is important to verify that the equation we are attempting to fit makes sense for the data set, and that we are not making our Machine Learning algorithims fit the training data so well that it cannot handle real test data.
