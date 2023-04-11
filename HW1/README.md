@@ -7,7 +7,7 @@ This program can iterate over a given data set to find the best curve fit to the
 
 
 ## Best fit of the sin function to the data:
-![test1](f1.png)
+![test1](figures/f1.png)
 
 # Background:
 This task is to teach us how to fit a curve to a data set to recognize the patterns and create a simple machine learning algorithim that can predict other potential points, or verify if other data points are following the pattern. This will be useful to understand for future Machine Learning projects as once we've grouped data, we will need to be able to identify which patterns they belong to, and thus which output they are. 
@@ -22,38 +22,38 @@ In this project, I used the least_squares function from scipy.optimize. This opt
 ## LSE from varying the C and D variables by ±25:
 <small>*\*The plot axes are offset by +25 to prevent a minor bug.*</small>
 
-![test1](f2.png)
+![test1](figures/f2.png)
 
 ## LSE from varying the A and B variables by ±25:
-![test1](f3.png)
+![test1](figures/f3.png)
 
 ## LSE from varying the A and C variables by ±25:
-![test1](f4.png)
+![test1](figures/f4.png)
 
 ## LSE from varying the B and C variables by ±25:
-![test1](f5.png)
+![test1](figures/f5.png)
 
 ## LSE from varying the A and D variables by ±25:
-![test1](f6.png)
+![test1](figures/f6.png)
 
 ## LSE from varying the B and D variables by ±25:
-![test1](f7.png)
+![test1](figures/f7.png)
 
 
 ## And my 19th polynomial fit showing the results of training data and test data:
 
 
 ## 19th Degree Polynomial fit to training data (first 20 data points):
-![test1](f8.png)
+![test1](figures/f8.png)
 
 ## 19th Degree Polynomial fit to test data (last 10 data points):
-![test1](f9.png)
+![test1](figures/f9.png)
 
 ## 19th Degree Polynomial fit to training data (first and last 10 data points):
-![test1](f10.png)
+![test1](figures/f10.png)
 
 ## 19th Degree Polynomial fit to test data (middle 20 data points):
-![test1](f11.png)
+![test1](figures/f11.png)
 
 # Summary and Conclusions:
 In summation, this exercise worked to show us the importance of understanding our data, and how easy it is to overfit a function to the training data. It is important to verify that the equation we are attempting to fit makes sense for the data set, and that we are not making our Machine Learning algorithims fit the training data so well that it cannot handle real test data.
