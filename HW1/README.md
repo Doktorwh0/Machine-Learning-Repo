@@ -56,4 +56,6 @@ In this project, I used the least_squares function from scipy.optimize. This opt
 ![test1](f11.png)
 
 # Summary and Conclusions:
-In summation, this exercise worked to show us the importance of understanding your data, and how easy it is to overfit a function to the training data. It is important to verify that the equation we are attempting to fit makes sense for the data set, and that we are not making our Machine Learning algorithims fit the training data so well that it cannot handle real test data.
+In summation, this exercise worked to show us the importance of understanding our data, and how easy it is to overfit a function to the training data. It is important to verify that the equation we are attempting to fit makes sense for the data set, and that we are not making our Machine Learning algorithims fit the training data so well that it cannot handle real test data.
+
+This will be important later on as overfitting data is an easy mistake to make. It's also important to make sure that we have sufficiently large data sets that we can train our ML algorithim well. Ideally, we would want our training set, or ground truth data set, to be as large as possible and our test data set to be larger still.
