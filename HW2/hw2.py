@@ -8,8 +8,6 @@ This program takes in the yalefaces.mat file, which contains 39 faces with
 
 
 import numpy as np
-from scipy.optimize import least_squares
-from scipy.ndimage import gaussian_filter
 import matplotlib.pyplot as plt
 from scipy.io import loadmat
 from PIL import Image
